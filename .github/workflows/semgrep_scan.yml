@@ -46,3 +46,10 @@ jobs:
       - name: Push Results to Dashboard
         run: |
           python push_to_dashboard.py  # Your script to process and push results
+
+
+      - name: Upload Results Dashboard
+        uses: actions/upload-artifact@v3
+        with:
+          name: Vulnerability Management Dashboard
+          path: Vuln_Management_Dashboard.xlsx
