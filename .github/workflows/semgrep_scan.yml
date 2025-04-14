@@ -36,8 +36,12 @@ jobs:
       - name: Install Semgrep
         run: pip install semgrep
 
+      - name: Install Requirements
+        run: pip install -r requirements.txt
+
       - name: Run Semgrep Scan
         run: semgrep scan --config auto --json --output semgrep-report.json
+
           
       - name: Push Results to Dashboard
         run: |
