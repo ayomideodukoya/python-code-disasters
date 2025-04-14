@@ -49,7 +49,7 @@ jobs:
 
 
       - name: Upload Results Dashboard
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Vulnerability Management Dashboard
           path: Vuln_Management_Dashboard.xlsx
